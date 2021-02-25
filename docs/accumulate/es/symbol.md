@@ -331,3 +331,38 @@ ES6 新增内置对象的Symbol.toStringTag属性值如下。
 console.log(Array.prototype[Symbol.unscopables]);
 console.log(Object.keys(Array.prototype[Symbol.unscopables]));
 ```
+<br>
+
+![image](./assets/s-2.png)  
+上面代码说明，数组有7个属性，会被with命令排除。
+
+```javascript
+//无Symbol.unscopables
+class MyClass {
+    foo() {
+        return 1;
+    }
+}
+var foo = function () {
+    return 2;
+}
+with (MyClass.prototype) {
+    console.log(foo()); //1
+}
+// 有Symbol.unscopables
+class MyClass {
+    foo() {
+        return 1;
+    }
+    get [Symbol.unscopables] () {
+        return {
+            foo : true,
+        }
+    }
+}
+var foo = () => 2;
+with(MyClass.prototype) {
+    console.log(foo()); //2
+}
+```
+上面代码通过指定Symbol.unscopables属性，使得with语法块不会再当前作用域寻找foo属性，即foo将指向外层作用域的变量。
