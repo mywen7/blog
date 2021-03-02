@@ -1,2 +1,38 @@
 # 前言
 目前前端知识点太大太广，需要学习的知识点太多，所以在此记录所有学过的知识点。便于复习以及检查自己的知识范围。想到什么之后再补充吧
+
+## 有用的网页
+[图片压缩工具](https://tinypng.com/)  
+[es6入门教程](https://es6.ruanyifeng.com/)  
+[Vue3中文文档](https://www.vue3js.cn/docs/zh/guide/introduction.html#vue-js-%E6%98%AF%E4%BB%80%E4%B9%88)  
+[Vue2中文文档](https://cn.vuejs.org/v2/guide/)  
+[Vue CLI](https://cli.vuejs.org/zh/guide/)  
+[Vuex](https://vuex.vuejs.org/zh/guide/getters.html)  
+[Vue2 Router](https://router.vuejs.org/zh/api/#router-aftereach)  
+[Vue3 Router](https://next.router.vuejs.org/guide/advanced/data-fetching.html#fetching-before-navigation)  
+[Vue Loader](https://vue-loader.vuejs.org/zh/guide/scoped-css.html#%E6%B7%B7%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%92%8C%E5%85%A8%E5%B1%80%E6%A0%B7%E5%BC%8F)  
+[Vue3 组合式API](https://v3.cn.vuejs.org/guide/composition-api-introduction.html#%E5%9F%BA%E6%9C%AC%E8%8C%83%E4%BE%8B)  
+[Vue Test Utils](https://vue-test-utils.vuejs.org/zh/)  
+[MDN Web文档](https://developer.mozilla.org/zh-CN/)  
+[Element-plus](https://element-plus.gitee.io/#/zh-CN/component/dialog)  
+[Element-ui](https://element.eleme.cn/#/zh-CN/component/installation)  
+[Cypress API](https://docs.cypress.io/guides/overview/why-cypress.html)  
+[F2](https://f2.antv.vision/zh/docs/tutorial/getting-started/#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BC%95%E5%85%A5)  
+[Echarts](https://echarts.apache.org/zh/tutorial.html#%E5%9C%A8%E6%89%93%E5%8C%85%E7%8E%AF%E5%A2%83%E4%B8%AD%E4%BD%BF%E7%94%A8%20ECharts)  
+[Typescript中文手册](https://typescript.bootcss.com/)  
+[typescript声明文件](https://www.tslang.cn/docs/handbook/declaration-files/by-example.html)  
+[Vant-轻量，可靠的移动端Vue组件库](https://youzan.github.io/vant/#/zh-CN/field)  
+[Lodash中文文档](https://www.lodashjs.com/docs/lodash.nth)  
+[javascript秘密花园](https://www.jb51.net/onlineread/JavaScript-Garden-CN/#array.general)  
+[webpack](https://www.webpackjs.com/concepts/)  
+[Vue Property Decorator](https://www.npmjs.com/package/vue-property-decorator#Provide)  
+[浏览器兼容性查看 Html5 CSS，etc](https://www.caniuse.com/?search=webkit-background-clip)  
+[flex布局阮一峰](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)  
+[a hooks](https://ahooks.js.org/zh-CN/hooks/state/use-network/)  
+[babel](https://www.babeljs.cn/repl)  
+[chrome-devtools](https://developers.google.com/web/tools/chrome-devtools)  
+
+## 杂学
+[js编辑器](https://codepen.io/pen?editors=0010)  
+[算法数据结构练习](https://www.geeksforgeeks.org/)  
+[视频学习网站](https://www.coursera.org/browse)  

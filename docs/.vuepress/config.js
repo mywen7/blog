@@ -11,6 +11,7 @@ module.exports = {
     nav: [
       { text: '前端基础', link: '/accumulate/' },
       { text: '算法题库', link: '/algorithm/' },
+      { text: '面试', link: '/interview/' },
       { text: 'Github', link: 'https://baidu.com' },
     ],
     sidebar: {
@@ -68,6 +69,17 @@ module.exports = {
           title: '测试菜单二',
           collapsable: false,
           sidebarDepth: 1,
+        }
+      ],
+      '/interview/': [
+        {
+          title: '面试问题总结记录',
+          children: [
+            'supplement',
+            'js',
+            'vue',
+            'http',
+          ]
         }
       ]
     },
