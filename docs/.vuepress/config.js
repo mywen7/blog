@@ -30,10 +30,16 @@ module.exports = {
             '/accumulate/js/性能优化',
             '/accumulate/js/script标签',
             '/accumulate/js/构造函数与普通函数的区别',
+            '/accumulate/js/原型',
             '/accumulate/js/setTimeout',
             '/accumulate/js/input的选中',
             '/accumulate/js/引用类型',
-            '/accumulate/js/context'
+            '/accumulate/js/context',
+            '/accumulate/js/函数的arguments',
+            '/accumulate/js/操作符',
+            '/accumulate/js/非操作符',
+            '/accumulate/js/undefined',
+            
           ]
         },
         {
@@ -45,6 +51,14 @@ module.exports = {
             '/accumulate/es/for-in与for-of',
             '/accumulate/es/promise',
             '/accumulate/es/symbol',
+            '/accumulate/es/splice',
+            '/accumulate/es/slice',
+            '/accumulate/es/sort',
+            '/accumulate/es/isArray',
+            '/accumulate/es/Iterator遍历器',
+            '/accumulate/es/扩展运算符',
+            '/accumulate/es/padStart-padEnd',
+            '/accumulate/es/解构赋值',
           ]
         },
         {
@@ -56,11 +70,28 @@ module.exports = {
           ]
         },
         {
+          title: 'HTML',
+          path: '/accumulate/HTML/',
+          collapsable: true,
+          children: [
+            '/accumulate/HTML/Html标签属性',
+          ]
+        },
+        {
           title: '杂乱的',
           path: '/accumulate/other/',
           collapsable: true,
           children: [
             '/accumulate/other/泛型',
+            '/accumulate/other/html',
+            '/accumulate/other/window.history',
+            '/accumulate/other/短路',
+            '/accumulate/other/js操作DOM事件',
+            '/accumulate/other/查看是什么类型的HTMLElement',
+            '/accumulate/other/mock数据',
+            '/accumulate/other/嵌套数组变成扁平数组',
+            '/accumulate/other/异常处理',
+            '/accumulate/other/webpack打包文件',
           ]
         },
       ],
