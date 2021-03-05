@@ -70,10 +70,16 @@ module.exports = {
             '/accumulate/vue/3-suspense',
             '/accumulate/vue/3-useRouter',
             '/accumulate/vue/2-响应式原理',
+            '/accumulate/vue/2-响应式的缺陷',
             '/accumulate/vue/2-批量注册全局组件',
             '/accumulate/vue/2-slot',
             '/accumulate/vue/2-指令的动态参数',
             '/accumulate/vue/2-v-on',
+            '/accumulate/vue/2-v-model',
+            '/accumulate/vue/v-if-v-show',
+            '/accumulate/vue/v-for',
+            '/accumulate/vue/2-动态组件',
+            '/accumulate/vue/compositionApi',
           ]
         },
         {
@@ -112,6 +118,10 @@ module.exports = {
             '/accumulate/other/视口可见-滚动',
             '/accumulate/other/一个锢钉',
             '/accumulate/other/vue2与vue3的区别',
+            '/accumulate/other/vue2自定义指令',
+            '/accumulate/other/vue2过滤器',
+            '/accumulate/other/递归组件产生编译错误',
+            '/accumulate/other/让子组件纯净',
           ]
         },
       ],
