@@ -39,7 +39,7 @@ module.exports = {
             '/accumulate/js/操作符',
             '/accumulate/js/非操作符',
             '/accumulate/js/undefined',
-            
+            '/accumulate/js/call-apply',
           ]
         },
         {
@@ -59,6 +59,21 @@ module.exports = {
             '/accumulate/es/扩展运算符',
             '/accumulate/es/padStart-padEnd',
             '/accumulate/es/解构赋值',
+          ]
+        },
+        {
+          title: 'vue',
+          path: '/accumulate/vue/',
+          collapsable: true,
+          children: [
+            '/accumulate/vue/3-vue(mini)',
+            '/accumulate/vue/3-suspense',
+            '/accumulate/vue/3-useRouter',
+            '/accumulate/vue/2-响应式原理',
+            '/accumulate/vue/2-批量注册全局组件',
+            '/accumulate/vue/2-slot',
+            '/accumulate/vue/2-指令的动态参数',
+            '/accumulate/vue/2-v-on',
           ]
         },
         {
@@ -92,6 +107,11 @@ module.exports = {
             '/accumulate/other/嵌套数组变成扁平数组',
             '/accumulate/other/异常处理',
             '/accumulate/other/webpack打包文件',
+            '/accumulate/other/nrm',
+            '/accumulate/other/jQuery',
+            '/accumulate/other/视口可见-滚动',
+            '/accumulate/other/一个锢钉',
+            '/accumulate/other/vue2与vue3的区别',
           ]
         },
       ],
