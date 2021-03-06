@@ -93,6 +93,18 @@ module.exports = {
           ]
         },
         {
+          title: 'react',
+          path: '/accumulate/react/',
+          collapsable: true,
+          children: [
+            '/accumulate/react/JSX',
+            '/accumulate/react/列表',
+            '/accumulate/react/判断语句',
+            '/accumulate/react/props.children',
+            '/accumulate/react/函数组件',
+          ]
+        },
+        {
           title: 'HTML',
           path: '/accumulate/HTML/',
           collapsable: true,
@@ -162,8 +174,12 @@ module.exports = {
       '/algorithm/': [
         {
           title: '算法',
+          collapsable: false,
           children: [
-            '有关数学'
+            '有关数学',
+            '时间复杂度',
+            '空间复杂度',
+            '冒泡排序',
           ]
         }
       ],
