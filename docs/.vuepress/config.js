@@ -80,6 +80,8 @@ module.exports = {
             '/accumulate/vue/v-for',
             '/accumulate/vue/2-动态组件',
             '/accumulate/vue/compositionApi',
+            '/accumulate/vue/函数组件',
+            
           ]
         },
         {
@@ -103,9 +105,13 @@ module.exports = {
           path: '/accumulate/other/',
           collapsable: true,
           children: [
+            '/accumulate/other/正则表达式',
             '/accumulate/other/泛型',
             '/accumulate/other/html',
             '/accumulate/other/window.history',
+            '/accumulate/other/柯里化',
+            '/accumulate/other/纯函数',
+            '/accumulate/other/回调地狱图例',
             '/accumulate/other/短路',
             '/accumulate/other/js操作DOM事件',
             '/accumulate/other/查看是什么类型的HTMLElement',
@@ -122,14 +128,43 @@ module.exports = {
             '/accumulate/other/vue2过滤器',
             '/accumulate/other/递归组件产生编译错误',
             '/accumulate/other/让子组件纯净',
+            '/accumulate/other/弹窗添加路由方式',
+            '/accumulate/other/异步方法',
+            '/accumulate/other/2-动画',
+            '/accumulate/other/常用英文',
           ]
         },
+        {
+          title: '第三方组件库',
+          path: '/accumulate/three/',
+          collapsable: true,
+          children: [
+            '/accumulate/three/el-progress',
+            '/accumulate/three/el-tabs',
+            '/accumulate/three/vant-list中的load方法'
+          ],
+        },
+        {
+          title: 'CSS',
+          path: '/accumulate/css/',
+          collapsable: true,
+          children: [
+            '/accumulate/css/绝对定位居中偏移',
+            '/accumulate/css/居中',
+            '/accumulate/css/怪异盒子模型',
+            '/accumulate/css/高度塌陷',
+            '/accumulate/css/滚动条样式',
+            '/accumulate/css/宽度高度',
+            '/accumulate/css/显示',
+          ],
+        }
       ],
       '/algorithm/': [
         {
-          title: '测试菜单二',
-          collapsable: false,
-          sidebarDepth: 1,
+          title: '算法',
+          children: [
+            '有关数学'
+          ]
         }
       ],
       '/interview/': [
