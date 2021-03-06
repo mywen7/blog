@@ -12,6 +12,7 @@ module.exports = {
       { text: '前端基础', link: '/accumulate/' },
       { text: '算法题库', link: '/algorithm/' },
       { text: '面试', link: '/interview/' },
+      { text: '工具', link: '/tool/' },
       { text: 'Github', link: 'https://baidu.com' },
     ],
     sidebar: {
@@ -147,6 +148,21 @@ module.exports = {
           ]
         },
         {
+          title: '小妙招',
+          path: '/accumulate/method/',
+          collapsable: true,
+          children: [
+            '/accumulate/method/明确的思路',
+            '/accumulate/method/高端的思路',
+            '/accumulate/method/交给子组件去处理',
+            '/accumulate/method/高架空逻辑',
+            '/accumulate/method/使用token登录',
+            '/accumulate/method/闭包与匿名函数',
+            '/accumulate/method/元素不存在时点击',
+            '/accumulate/method/获取一个数组中不重复的元素',
+          ]
+        },
+        {
           title: '第三方组件库',
           path: '/accumulate/three/',
           collapsable: true,
@@ -169,7 +185,25 @@ module.exports = {
             '/accumulate/css/宽度高度',
             '/accumulate/css/显示',
           ],
-        }
+        },
+        {
+          title: '测试',
+          path: '/accumulate/test/',
+          collapsable: true,
+          children: [
+            '/accumulate/test/单元测试常用断言词',
+          ],
+        },
+        {
+          title: '错误频繁警告',
+          path: '/accumulate/warning/',
+          collapsable: true,
+          children: [
+            '/accumulate/warning/错误捕获',
+            '/accumulate/warning/计算机能够解析的',
+            '/accumulate/warning/经常犯的智障错误',
+          ],
+        },
       ],
       '/algorithm/': [
         {
@@ -193,7 +227,20 @@ module.exports = {
             'http',
           ]
         }
-      ]
+      ],
+      '/tool/': [
+        {
+          title: '工具安装与使用教程',
+          collapsable: false,
+          children: [
+            'nodejs到vue',
+            'git',
+            'git的一些命令',
+            'github',
+            'github访问失败解决'
+          ]
+        }
+      ],
     },
   },
 };
