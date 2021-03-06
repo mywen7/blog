@@ -152,6 +152,7 @@ module.exports = {
           path: '/accumulate/method/',
           collapsable: true,
           children: [
+            '/accumulate/method/找bug与解决方法',
             '/accumulate/method/明确的思路',
             '/accumulate/method/高端的思路',
             '/accumulate/method/交给子组件去处理',
