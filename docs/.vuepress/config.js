@@ -196,7 +196,7 @@ module.exports = {
           ],
         },
         {
-          title: '错误频繁警告',
+          title: '频繁错误警告',
           path: '/accumulate/warning/',
           collapsable: true,
           children: [
