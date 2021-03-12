@@ -61,6 +61,7 @@ module.exports = {
             '/accumulate/es/padStart-padEnd',
             '/accumulate/es/解构赋值',
             '/accumulate/es/数组from-of',
+            '/accumulate/es/Map-Set',
           ]
         },
         {
