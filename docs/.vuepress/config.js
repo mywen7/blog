@@ -144,6 +144,7 @@ module.exports = {
             '/accumulate/other/递归组件产生编译错误',
             '/accumulate/other/让子组件纯净',
             '/accumulate/other/弹窗添加路由方式',
+            '/accumulate/other/window事件',
             '/accumulate/other/异步方法',
             '/accumulate/other/2-动画',
             '/accumulate/other/常用英文',
