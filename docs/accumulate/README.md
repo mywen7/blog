@@ -36,3 +36,4 @@
 [js编辑器](https://codepen.io/pen?editors=0010)  
 [算法数据结构练习](https://www.geeksforgeeks.org/)  
 [视频学习网站](https://www.coursera.org/browse)  
+[初级前端需要掌握的技能](https://juejin.cn/post/6925197705832562696#heading-0)
