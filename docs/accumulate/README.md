@@ -14,6 +14,7 @@
 [Vue3 组合式API](https://v3.cn.vuejs.org/guide/composition-api-introduction.html#%E5%9F%BA%E6%9C%AC%E8%8C%83%E4%BE%8B)  
 [Vue Test Utils](https://vue-test-utils.vuejs.org/zh/)  
 [MDN Web文档](https://developer.mozilla.org/zh-CN/)  
+[现代 JavaScript 教程](https://zh.javascript.info/)  
 [Element-plus](https://element-plus.gitee.io/#/zh-CN/component/dialog)  
 [Element-ui](https://element.eleme.cn/#/zh-CN/component/installation)  
 [Cypress API](https://docs.cypress.io/guides/overview/why-cypress.html)  
