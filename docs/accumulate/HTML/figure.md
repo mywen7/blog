@@ -22,4 +22,8 @@
 <img src="/i/shanghai_lupu_bridge.jpg" width="350" height="234" />
 ```
 
-![image](./assets/figure-2.png)
+![image](./assets/figure-2.png)  
+
+### \<figcaption> 标签定义 figure 元素的标题（caption）。
+
+"figcaption" 元素应该被置于 "figure" 元素的第一个或最后一个子元素的位置。
