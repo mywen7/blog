@@ -252,6 +252,7 @@ module.exports = {
           children: [
             'nodejs到vue',
             'git',
+            '使用git遇到的错误',
             'git的一些命令',
             'github',
             'github访问失败解决'
