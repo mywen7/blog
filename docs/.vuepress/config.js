@@ -101,6 +101,8 @@ module.exports = {
           path: '/accumulate/react/',
           collapsable: true,
           children: [
+            '/accumulate/react/vue与react的区别',
+            '/accumulate/react/注意',
             '/accumulate/react/JSX',
             '/accumulate/react/列表',
             '/accumulate/react/判断语句',
@@ -114,6 +116,8 @@ module.exports = {
           collapsable: true,
           children: [
             '/accumulate/HTML/Html标签属性',
+            '/accumulate/HTML/fieldset',
+            '/accumulate/HTML/figure',
           ]
         },
         {

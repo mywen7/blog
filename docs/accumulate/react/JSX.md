@@ -22,3 +22,6 @@ const element = (
 使用圆括号可以使一个JSX中包含很多内容：  
 
 ![image](./assets/jsx-2.png)  
+
+以下两种示例代码完全等效：  
+![image](./assets/jsx-3.png)  
