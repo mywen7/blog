@@ -108,6 +108,8 @@ module.exports = {
             '/accumulate/react/判断语句',
             '/accumulate/react/props.children',
             '/accumulate/react/函数组件',
+            '/accumulate/react/ref',
+            '/accumulate/react/context',
           ]
         },
         {
