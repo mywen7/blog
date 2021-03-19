@@ -110,6 +110,7 @@ module.exports = {
             '/accumulate/react/函数组件',
             '/accumulate/react/ref',
             '/accumulate/react/context',
+            '/accumulate/react/Fragment',
           ]
         },
         {
@@ -133,6 +134,7 @@ module.exports = {
             '/accumulate/other/window.history',
             '/accumulate/other/柯里化',
             '/accumulate/other/纯函数',
+            '/accumulate/other/高阶函数',
             '/accumulate/other/回调地狱图例',
             '/accumulate/other/短路',
             '/accumulate/other/js操作DOM事件',
