@@ -33,6 +33,8 @@
 [babel](https://www.babeljs.cn/repl)  
 [chrome-devtools](https://developers.google.com/web/tools/chrome-devtools)  
 [whistle接口劫持](http://wproxy.org/whistle/)添加Proxy Switcher扩展(得有访问外网的能力，例如添加谷歌访问助手扩展)
+[LESS](https://www.w3cschool.cn/less/darken.html)  
+[LESS详解](https://www.jianshu.com/p/bc3b31e7b6e5?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)  
 ## 杂学
 [js编辑器](https://codepen.io/pen?editors=0010)  
 [算法数据结构练习](https://www.geeksforgeeks.org/)  
