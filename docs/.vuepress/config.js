@@ -13,6 +13,7 @@ module.exports = {
       { text: '算法题库', link: '/algorithm/' },
       { text: '面试', link: '/interview/' },
       { text: '工具', link: '/tool/' },
+      { text: '交接', link: '/project/' },
       { text: 'Github', link: 'https://baidu.com' },
     ],
     sidebar: {
