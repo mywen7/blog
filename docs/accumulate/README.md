@@ -13,8 +13,11 @@
 [Vue Loader](https://vue-loader.vuejs.org/zh/guide/scoped-css.html#%E6%B7%B7%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%92%8C%E5%85%A8%E5%B1%80%E6%A0%B7%E5%BC%8F)  
 [Vue3 组合式API](https://v3.cn.vuejs.org/guide/composition-api-introduction.html#%E5%9F%BA%E6%9C%AC%E8%8C%83%E4%BE%8B)  
 [Vue Test Utils](https://vue-test-utils.vuejs.org/zh/)  
+[jestjs](https://jestjs.io/)  
 [MDN Web文档](https://developer.mozilla.org/zh-CN/)  
 [现代 JavaScript 教程](https://zh.javascript.info/)  
+[jsdoc](https://www.html.cn/doc/jsdoc/)  
+[git-flow](http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html)  
 [Element-plus](https://element-plus.gitee.io/#/zh-CN/component/dialog)  
 [Element-ui](https://element.eleme.cn/#/zh-CN/component/installation)  
 [Cypress API](https://docs.cypress.io/guides/overview/why-cypress.html)  
@@ -58,4 +61,9 @@
 [实现一个 async/await (typescript 版)](https://juejin.cn/post/6913393501262577672)  
 [[Vue官方教程笔记]- 尤雨溪手写mini-vue](https://juejin.cn/post/6911897255087702030)  
 [泛型就这么简单](https://segmentfault.com/a/1190000014120746)  
-[一名【合格】前端工程师的自检清单](https://juejin.cn/post/6844903830887366670#heading-20)
+[一名【合格】前端工程师的自检清单](https://juejin.cn/post/6844903830887366670#heading-20)  
+
+
+[rap2](http://rap2.taobao.org/organization/repository?organization=118802)  
+[阿里云](https://code.aliyun.com/?accounttraceid=61e202b2bd794cc09cf78eaa97403d0csdjf)  
+[tapd](https://www.tapd.cn/company/participant_projects?from=left_tree2)
