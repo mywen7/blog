@@ -62,7 +62,12 @@
 [[Vue官方教程笔记]- 尤雨溪手写mini-vue](https://juejin.cn/post/6911897255087702030)  
 [泛型就这么简单](https://segmentfault.com/a/1190000014120746)  
 [一名【合格】前端工程师的自检清单](https://juejin.cn/post/6844903830887366670#heading-20)  
-
+[好好看一下打一打基础](https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md)
+[饿了么点餐](https://github.com/SimonZhangITer/VueDemo_Sell_Eleme)
+[vue音乐](https://github.com/Sioxas/vue-music)
+[淘票票](https://github.com/canfoo/vue2.0-taopiaopiao)
+[网易云音乐](https://github.com/IFmiss/vue-music)
+[慕课饿了吗](https://github.com/SimonZhangITer/VueDemo_Sell_Eleme)  
 
 [rap2](http://rap2.taobao.org/organization/repository?organization=118802)  
 [阿里云](https://code.aliyun.com/?accounttraceid=61e202b2bd794cc09cf78eaa97403d0csdjf)  
