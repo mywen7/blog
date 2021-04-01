@@ -103,11 +103,13 @@ module.exports = {
           collapsable: true,
           children: [
             '/accumulate/react/vue与react的区别',
+            '/accumulate/react/redux与vuex的差别',
             '/accumulate/react/注意',
             '/accumulate/react/JSX',
             '/accumulate/react/列表',
             '/accumulate/react/判断语句',
             '/accumulate/react/props.children',
+            '/accumulate/react/生命周期',
             '/accumulate/react/函数组件',
             '/accumulate/react/ref',
             '/accumulate/react/context',
@@ -256,6 +258,7 @@ module.exports = {
           collapsable: false,
           children: [
             'nodejs到vue',
+            'node安装软件遇见的问题',
             'git',
             '使用git遇到的错误',
             'git的一些命令',
