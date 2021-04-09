@@ -1,0 +1,258 @@
+分步切换step，每步里面又有不同多的gif图片，gif图片需要循环显示，每张图片的时间又不一样，得根据设定的时间来显示完毕，再显示下一张。CarouselImageList组件中根据currentIndex来获取当前的gif，但是gif根据index切换的话，如何不同step切换但是从step2[0]切换到step1[0]的话，因为index没有改变，所以监听器监听不了。但是如果改变为id监听的话，会在第二次或者之后的某一次拿到上一step的值，之后又会修正回来。（大致就是hook中使用setTimeout的问题）
+```js
+import { CircleView, TYText, Carousel, Motion } from '@tuya-rn/tuya-native-components';
+import { cx } from '@utils';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import res from '@res';
+import { View, Image } from 'react-native';
+import strings from '@i18n';
+
+interface Props {
+  step: number;
+  isButton: boolean;
+}
+
+const btnImageList: ImageInfo[][] = [
+  [
+    {
+      id: '1-1',
+      source: res.btnRemoteControl1,
+      title: 'btn_remote_control1',
+      time: '2000',
+    },
+    {
+      id: '1-2',
+      source: res.btnRemoteControl2,
+      title: 'btn_remote_control2',
+      time: '2000',
+    },
+    {
+      id: '1-3',
+      source: res.btnRemoteControl3,
+      title: 'btn_remote_control3',
+      time: '2000',
+    },
+  ],
+  [
+    {
+      id: '2-1',
+      source: res.btnNoNet1,
+      title: 'btn_nonet1',
+      time: '8000',
+    },
+    {
+      id: '2-2',
+      source: res.btnNoNet2,
+      title: 'btn_nonet2',
+      time: '7000',
+    },
+  ],
+  [
+    {
+      id: '3-1',
+      source: res.btnNet,
+      title: 'btn_net',
+      time: '2000',
+    },
+  ],
+  [
+    {
+      id: '4-1',
+      source: res.btnMode,
+      title: 'btn_mode',
+      time: '2000',
+    },
+  ],
+];
+
+const gifList1 = [
+  {
+    source: res.knobRemoteControl1,
+    title: 'knob_remote_control1',
+    time: '2000',
+  },
+  {
+    source: res.knobRemoteControl2,
+    title: 'knob_remote_control2',
+    time: '2000',
+  },
+  {
+    source: res.knobRemoteControl3,
+    title: 'knob_remote_control3',
+    time: '2000',
+  },
+];
+
+const knobImageList = [
+  [
+    {
+      source: res.knobRemoteControl1,
+      title: 'knob_remote_control1',
+      time: '2000',
+    },
+    {
+      source: res.knobRemoteControl2,
+      title: 'knob_remote_control2',
+      time: '2000',
+    },
+    {
+      source: res.knobRemoteControl3,
+      title: 'knob_remote_control3',
+      time: '2000',
+    },
+  ],
+  [
+    {
+      source: res.knobNoNet1,
+      title: 'knob_nonet1',
+      time: '2000',
+    },
+    {
+      source: res.knobNoNet2,
+      title: 'knob_nonet2',
+      time: '2000',
+    },
+  ],
+  [
+    {
+      source: res.knobNet,
+      title: 'knob_net',
+      time: '2000',
+    },
+  ],
+  [
+    {
+      source: res.knobMode,
+      title: 'knob_mode',
+      time: '2000',
+    },
+  ],
+];
+
+export default (props: Props) => {
+  // const imageList = props.isButton ? btnImageList[props.step - 1] : knobImageList[props.step - 1];
+  const imageList = btnImageList[props.step - 1];
+  const TopComponent = <CarouselImageList imageList={imageList} step={props.step} />;
+  return (
+    <View
+      style={{
+        width: cx(345),
+        height: cx(257),
+        backgroundColor: '#f6f7f9',
+        borderTopLeftRadius: cx(12),
+        borderTopRightRadius: cx(12),
+        overflow: 'hidden',
+      }}
+    >
+      {TopComponent}
+      <Pointer selected={props.step} />
+    </View>
+  );
+};
+
+interface ImageInfo {
+  id: string;
+  source: any;
+  title: string;
+  time: string;
+}
+
+const CarouselImageList = (props: { imageList: ImageInfo[]; step: number }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [current, setCurrent] = useState(props.imageList[0]);
+  // const [currentTime, setCurrentTime] = useState(props.imageList[0].time);
+
+  const timeoutRef: any = useRef(null);
+
+  // let timer;
+
+  const setTimeoutHandle = useCallback(
+    () => {
+      // if (timeoutRef.current) {
+      //   clearTimeout(timeoutRef.current);
+      // }
+      console.log('setTimeoutHandle', currentIndex);
+      timeoutRef.current = setTimeout(() => {
+        setCurrentIndex(currentIndex < props.imageList.length - 1 ? currentIndex + 1 : 0);
+        
+      }, Number(props.imageList[currentIndex].time));
+      // timer = setTimeout(() => {
+      //   setCurrentIndex(currentIndex < props.imageList.length - 1 ? currentIndex + 1 : 0);
+      // }, Number(current.time));
+    },
+    [currentIndex],
+  );
+
+  useEffect(() => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setCurrent(props.imageList[0]);
+    setCurrentIndex(0);
+  }, [props.step]);
+
+  useEffect(() => {
+    // setCurrent(props.imageList[currentIndex]);
+    console.log('props.step', props.step);
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setTimeoutHandle();
+    console.log('currentIndex', currentIndex);
+    return () => {
+      console.log('currentIndexclear');
+      // clearTimeout(timer);
+    };
+  }, [currentIndex, props.step]);
+
+  const imageSection = props.imageList.map((image, index) => (
+    <View key={image.title} style={{ position: 'relative' }}>
+      <Motion.Fade show={currentIndex === index}>
+        <View>
+          <Image source={image.source} style={{ width: '100%', height: '100%' }} />
+          <TYText
+            color="#898989"
+            style={{
+              position: 'absolute',
+              bottom: '10%',
+              textAlign: 'center',
+              width: '100%',
+            }}
+          >
+            {strings.getLang(`${image.title}`)}
+          </TYText>
+        </View>
+      </Motion.Fade>
+    </View>
+  ));
+
+  return <>{imageSection}</>;
+};
+
+const Pointer = (props: { selected: number }) => {
+  return (
+    <View style={{ flexDirection: 'row', position: 'absolute', top: cx(20), alignSelf: 'center' }}>
+      {new Array(4)
+        .fill(0)
+        .map((__, i) => +i + 1)
+        .map(i => {
+          return (
+            <CircleView
+              key={i}
+              style={{ justifyContent: 'center', alignItems: 'center', marginRight: cx(6) }}
+              radius={cx(7)}
+              borderColor="rgba(0,0,0,0.4)"
+              borderWidth={0.5}
+              color={props.selected === i ? 'rgba(0,0,0,0.7)' : 'rgba(0,0,0,0)'}
+            >
+              <TYText color={props.selected === i ? '#fff' : '#000'} size={cx(11)}>
+                {i}
+              </TYText>
+            </CircleView>
+          );
+        })}
+    </View>
+  );
+};
+
+```
