@@ -114,6 +114,8 @@ module.exports = {
             '/accumulate/react/ref',
             '/accumulate/react/context',
             '/accumulate/react/Fragment',
+            '/accumulate/react/useRef',
+            '/accumulate/react/rn-style',
           ]
         },
         {
