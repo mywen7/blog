@@ -84,6 +84,7 @@ module.exports = {
             '/accumulate/vue/v-if-v-show',
             '/accumulate/vue/v-for',
             '/accumulate/vue/2-动态组件',
+            '/accumulate/vue/3-reactive',
             '/accumulate/vue/compositionApi',
             '/accumulate/vue/函数组件',
             
